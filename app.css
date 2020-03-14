@@ -1,8 +1,16 @@
-/* #343a40 */
 body {
-  background-color: #343a40;
+  background-color: #343A40;
 }
 
+body .bg-dark {
+  background-color: rgba(0,0,0,0.8);
+}
 .card {
   cursor: pointer;
+  transition: 0.5s;
+  line-height: .8rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
