@@ -1,32 +1,40 @@
 /* === Import Bootstrap functions and variables === */
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/functions";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
 /*-------------------------------------------------------------------*/
 /* Change theme-colors */
 $theme-colors: (
-                primary: #234d7b,
-                secondary: #3b3c3e,
-                success: #1e6111,
-                info:  #64c3d2,
-                warning: #f5e74a,
-                danger: #820410,
-                dark: #162030
-                );
+  primary: #234d7b,
+  secondary: #3b3c3e,
+  success: #1e6111,
+  info: #64c3d2,
+  warning: #f5e74a,
+  danger: #820410,
+  dark: #162030,
+);
 /*-------------------------------------------------------------------*/
 /* === Boostrap Main SCSS === */
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 /*-------------------------------------------------------------------*/
 
 body {
   background-color: #162030;
 }
 
+.card-wrapper {
+  perspective: 600px;
+  position: relative;
+}
+
 .card {
   cursor: pointer;
   border: none;
-  box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
   transition: 0.5s;
-  line-height: .8rem;
+  line-height: 0.8rem;
+  // position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .card:hover {
@@ -37,4 +45,19 @@ body {
 
 .card-body {
   background-color: orange;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+// .front,
+// .back {
+//   display: flex;
+//   position: absolute;
+//   backface-visibility: hidden;
+// }
+
+.back {
+  transform: rotateY(180deg);
 }
