@@ -43,6 +43,9 @@
   border-radius: 8px;
 }
 
+.badge {
+  font-size: .9rem;
+}
 .far,
 .fab {
   padding: 0 5px;
