@@ -1,3 +1,7 @@
+.container {
+  width: 80vw;
+}
+
 .navbar-brand {
   font-size: 3rem;
   text-shadow: 2px 2px 8px rgba(82, 168, 236, 0.6), 2px 2px 4px #000000;
@@ -6,6 +10,9 @@
 .jumbotron {
   margin-bottom: 0;
   padding: 32px;
+}
+
+.jumbotron-heading {
 }
 
 .navbar-toggler {
@@ -29,8 +36,11 @@
   text-shadow: 2px 2px 8px rgba(82, 168, 236, 0.6), 2px 2px 4px #000000;
 }
 
-.fab,
-.far {
-  font-size: 1.6rem;
-  margin: 2%;
+.btn {
+  border-radius: 8px;
+}
+
+.far,
+.fab {
+  padding: 0 5px;
 }
