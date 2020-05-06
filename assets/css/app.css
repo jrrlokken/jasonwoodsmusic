@@ -20,7 +20,7 @@
 
 .navbar-brand {
   font-size: 3rem;
-  text-shadow: 2px 2px 8px rgba(82, 168, 236, 0.6), 2px 2px 4px #000000;
+  text-shadow: 2px 2px 8px rgba(82, 168, 236, 0.6), 2px 2px 4px #ffffff;
 }
 
 .jumbotron {
@@ -29,8 +29,7 @@
 }
 
 .jumbotron-heading {
-  /* font-size: 2rem; */
-  /* letter-spacing: -1px; */
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
 }
 
 .navbar-toggler {
