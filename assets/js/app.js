@@ -13,9 +13,23 @@ const $workButton = $("#work-button");
 
 $workAlbum.hide();
 
+function getWorkBtnText() {
+  let isClicked = $workButton.hasClass("clicked");
+  let btnText = isClicked ? "Back" : "Work";
+  return btnText;
+}
+
+$workButton.text(getWorkBtnText());
+
 $workButton.on("click", function () {
-  $("#landing-page").addClass("work");
-  $workAlbum.show();
+  $workButton.toggleClass("clicked");
+  $workButton.text(getWorkBtnText());
+  $("#landing-page").toggleClass("work");
+  if (getWorkBtnText() === "Work") {
+    $workAlbum.hide();
+  } else {
+    $workAlbum.show();
+  }
 });
 
 $bookingForm.submit(function (event) {
