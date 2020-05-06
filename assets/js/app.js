@@ -1,7 +1,36 @@
 // document.addEventListener('DOMContentLoaded', function() {
-const workAlbum = document.querySelector('.album');
-const workButton = document.getElementById('work-button');
-workButton.addEventListener('click', function () {
-  workAlbum.classList.remove('d-none');
+const $bookingModal = $("#bookingModal");
+const $workAlbum = $(".album");
+const $workButton = $("#work-button");
+
+$workAlbum.hide();
+
+$workButton.on("click", function () {
+  $("#landing-page").addClass("work");
+  $workAlbum.show();
+});
+
+$bookingModal.submit(function (event) {
+  event.preventDefault();
+
+  const firstName = $("#firstName").val();
+  const lastName = $("#lastName").val();
+  const email = $("#email").val();
+  const startDate = $("#startDate").val();
+  const endDate = $("#endDate").val();
+  const text = $("#proposalText").val();
+
+  const subject = "New Session Booking";
+  const to_email = "jrrlokken@gmail.com";
+  const body = `Booking proposal received from ${firstName} ${lastName} - ${email}:
+     Proposed booking dates: ${startDate} - ${endDate}
+     ${proposalText}
+    `;
+
+  // window.location.href =
+  //   "mailto:" + to_email + "?subject=" + subject + "&body=" + body;
+  console.log(firstName, lastName, email);
+
+  $bookingModal.modal("hide");
 });
 // });

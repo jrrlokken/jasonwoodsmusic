@@ -20,7 +20,8 @@
 
   <body>
     <header>
-      <div class="navbar navbar-dark box-shadow">
+      <!-- Nav -->
+      <div class="navbar navbar-dark">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <strong>JWM</strong>
@@ -114,10 +115,11 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main role="main">
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading text-white mb-5">
+      <section class="jumbotron text-center" id="landing-page">
+        <div class="container" id="main-container">
+          <h1 class="jumbotron-heading text-white mb-3">
             Engineer. Producer. Musician.
           </h1>
           <p class="lead text-light">
@@ -128,7 +130,7 @@
           <p>
             <a
               href="#"
-              class="btn btn-warning mt-5 px-4"
+              class="btn btn-warning mt-3 px-4"
               data-toggle="modal"
               data-target="#bookingModal"
               >Book A Session</a
@@ -164,51 +166,43 @@
                 <form>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputFirstName">First Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputFirstName"
-                      />
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" />
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputLastName">Last Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputLastName"
-                      />
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" />
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" />
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" />
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputStartDate">Start Date:</label>
+                      <label for="startDate">Start Date:</label>
                       <input
                         type="date"
                         class="form-control"
-                        id="inputStartDate"
+                        id="startDate"
                         min="2020-05-01"
                       />
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputEndDate">End Date:</label>
+                      <label for="endDate">End Date:</label>
                       <input
                         type="date"
                         class="form-control"
-                        id="inputEndDate"
+                        id="endDate"
                         min="2020-05-01"
                       />
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="inputTextArea">Project Proposal</label>
+                    <label for="proposalText">Project Proposal</label>
                     <textarea
                       class="form-control"
-                      id="inputTextArea"
+                      id="proposalText"
                       rows="5"
                       cols="33"
                     >

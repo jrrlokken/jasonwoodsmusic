@@ -1,5 +1,19 @@
 /* Custom styles and overrides */
 
+#landing-page {
+  height: 82vh;
+  /* padding-top: 30px; */
+}
+
+#landing-page.work {
+  margin-top: -82vh;
+  transition: margin-top 1s ease-in;
+}
+
+#main-container {
+  margin-top: 18%;
+}
+
 .container {
   width: 80vw;
 }
@@ -12,7 +26,6 @@
 .jumbotron {
   background-color: #2b3e50;
   margin-bottom: 0;
-  padding: 32px;
 }
 
 .navbar-toggler {
@@ -36,6 +49,10 @@
 
 .card-title {
   text-shadow: 2px 2px 8px rgba(82, 168, 236, 0.6), 2px 2px 4px #000000;
+}
+
+.modal-content {
+  border-radius: 5px;
 }
 
 .btn {
