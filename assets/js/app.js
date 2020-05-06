@@ -1,4 +1,12 @@
 // document.addEventListener('DOMContentLoaded', function() {
+
+const typedHeading = new Typed(".jumbotron-heading", {
+  strings: ["Engineer.  Producer.  Musician."],
+  typeSpeed: 100,
+  startDelay: 1000,
+  loop: false,
+});
+
 const $bookingModal = $("#bookingModal");
 const $workAlbum = $(".album");
 const $workButton = $("#work-button");
