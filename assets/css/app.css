@@ -41,6 +41,10 @@ html {
   margin-top: 10vh;
 }
 
+#copyright {
+  font-size: 0.8rem;
+}
+
 .container {
   width: 80vw;
 }
