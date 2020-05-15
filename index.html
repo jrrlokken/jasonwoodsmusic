@@ -19,139 +19,50 @@
   </head>
 
   <body>
-    <header>
-      <!-- Nav -->
-      <div class="navbar navbar-dark">
-        <div class="container d-flex justify-content-between">
-          <a href="/" class="navbar-brand d-flex align-items-center">
-            <strong>JWM</strong>
-          </a>
-          <div class="d-flex align-items-end">
-            <button
-              class="btn btn-outline-warning mx-3"
-              id="work-button"
-            ></button>
-            <button
-              class="btn btn-outline-warning mx-3"
-              data-toggle="modal"
-              data-target="#gearModal"
-            >
-              Gear
-            </button>
-            <button
-              class="btn btn-outline-warning mx-3"
-              data-toggle="modal"
-              data-target="#contactModal"
-            >
-              Contact
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Modal -->
-      <div
-        class="modal fade"
-        id="contactModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="contactModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">Contact Me!</h5>
+    <div class="bg">
+      <header>
+        <!-- Nav -->
+        <div class="navbar navbar-dark">
+          <div class="container d-flex justify-content-between">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+              <strong>JWM</strong>
+            </a>
+            <div class="d-flex align-items-end">
               <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
+                class="btn btn-outline-warning mx-3"
+                id="work-button"
+              ></button>
+              <button
+                class="btn btn-outline-warning mx-3"
+                data-toggle="modal"
+                data-target="#gearModal"
               >
-                <span aria-hidden="true">&times;</span>
+                Gear
+              </button>
+              <button
+                class="btn btn-outline-warning mx-3"
+                data-toggle="modal"
+                data-target="#contactModal"
+              >
+                Contact
               </button>
             </div>
-            <div class="modal-body text-center">
-              <a href="mailto:jwoodsywoods@gmail.com"
-                ><i class="far fa-envelope fa-2x mx-2 text-warning"></i
-              ></a>
-              <a href="https://twitter.com"
-                ><i class="fab fa-twitter fa-2x mx-2 text-warning"></i
-              ></a>
-              <a href="https://facebook.com"
-                ><i class="fab fa-facebook fa-2x mx-2 text-warning"></i
-              ></a>
-            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Gear Modal -->
-      <div
-        class="modal fade"
-        id="gearModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="gearModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="gearModalLabel">My Gear</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body text-center">
-              Placeholder text here... ultimately, a list of your gear, I guess?
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <main role="main">
-      <section class="jumbotron text-center" id="landing-page">
-        <div class="container" id="main-container">
-          <h1 class="jumbotron-heading text-white"></h1>
-          <p class="lead text-light">
-            Something short and leading about the collection below—its contents,
-            the creator, etc. Make it short and sweet, but not too short so
-            folks don't simply skip over it entirely.
-          </p>
-          <p>
-            <a
-              href="#"
-              class="btn btn-warning mt-3 px-4"
-              data-toggle="modal"
-              data-target="#bookingModal"
-              >Book A Session</a
-            >
-          </p>
-        </div>
-
-        <!-- Booking Modal -->
+        <!-- Contact Modal -->
         <div
           class="modal fade"
-          id="bookingModal"
+          id="contactModal"
           tabindex="-1"
           role="dialog"
-          aria-labelledby="bookingModalLabel"
+          aria-labelledby="contactModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="bookingModalLabel">
-                  Book A Session
-                </h5>
+                <h5 class="modal-title" id="contactModalLabel">Contact Me!</h5>
                 <button
                   type="button"
                   class="close"
@@ -161,224 +72,316 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <form id="booking-form">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="firstName">First Name</label>
+              <div class="modal-body text-center">
+                <a href="mailto:jwoodsywoods@gmail.com"
+                  ><i class="far fa-envelope fa-2x mx-2 text-warning"></i
+                ></a>
+                <a href="https://twitter.com"
+                  ><i class="fab fa-twitter fa-2x mx-2 text-warning"></i
+                ></a>
+                <a href="https://facebook.com"
+                  ><i class="fab fa-facebook fa-2x mx-2 text-warning"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gear Modal -->
+        <div
+          class="modal fade"
+          id="gearModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="gearModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="gearModalLabel">My Gear</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                Placeholder text here... ultimately, a list of your gear, I
+                guess?
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main role="main">
+        <section class="jumbotron text-center" id="landing-page">
+          <div class="container" id="main-container">
+            <h1 class="jumbotron-heading text-white"></h1>
+            <p class="lead text-light">
+              Something short and leading about the collection below—its
+              contents, the creator, etc. Make it short and sweet, but not too
+              short so folks don't simply skip over it entirely.
+            </p>
+            <p>
+              <a
+                href="#"
+                class="btn btn-warning mt-3 px-4"
+                data-toggle="modal"
+                data-target="#bookingModal"
+                >Book A Session</a
+              >
+            </p>
+          </div>
+
+          <!-- Booking Modal -->
+          <div
+            class="modal fade"
+            id="bookingModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="bookingModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="bookingModalLabel">
+                    Book A Session
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="booking-form">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="firstName"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="lastName"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
                       <input
-                        type="text"
+                        type="email"
                         class="form-control"
-                        id="firstName"
+                        id="email"
                         required
                       />
                     </div>
-                    <div class="form-group col-md-6">
-                      <label for="lastName">Last Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        required
-                      />
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="startDate">Start Date:</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="startDate"
+                          min="2020-05-01"
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="endDate">End Date:</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="endDate"
+                          min="2020-05-01"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      required
+                    <div class="form-group">
+                      <label for="proposalText">Project Proposal</label>
+                      <textarea class="form-control" id="proposalText" rows="5">
+                      </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">
+                      SUBMIT
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work Album -->
+        <div class="album py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card box-shadow front mx-2 mb-5">
+                    <!-- <div class="card-header d-flex justify-content-center">
+                        <a href="#" class="btn btn-danger">New Release!</a>
+                      </div> -->
+                    <img
+                      class="card-img-top"
+                      src="images/project1.jpg"
+                      alt="Card image cap"
                     />
-                  </div>
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="startDate">Start Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="startDate"
-                        min="2020-05-01"
-                      />
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="endDate">End Date:</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="endDate"
-                        min="2020-05-01"
-                      />
+                    <a href="#" class="badge badge-danger py-2">New Release!</a>
+                    <div class="card-body bg-dark text-light">
+                      <p class="card-title h4 text-center pb-2">Project One</p>
+                      <p></p>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="proposalText">Project Proposal</label>
-                    <textarea class="form-control" id="proposalText" rows="5">
-                    </textarea>
+                  <div class="back">
+                    <img />
                   </div>
-                  <button type="submit" class="btn btn-warning">SUBMIT</button>
-                </form>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card mb-5 box-shadow front mx-2">
+                    <img
+                      class="card-img-top"
+                      src="images/project2.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body bg-dark text-light">
+                      <p class="card-title h4 text-center pb-2">Project Two</p>
+                      <p></p>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <img />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card mb-5 box-shadow front mx-2">
+                    <img
+                      class="card-img-top"
+                      src="images/project3.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body bg-dark text-light">
+                      <p class="card-title h4 text-center pb-2">
+                        Project Three
+                      </p>
+                      <p></p>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <img />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card mb-5 box-shadow front">
+                    <img
+                      class="card-img-top"
+                      src="images/project4.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body bg-dark text-light">
+                      <p class="card-title h4 text-center pb-2">Project Four</p>
+                      <p></p>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <img />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card mb-5 box-shadow front">
+                    <img
+                      class="card-img-top"
+                      src="images/project5.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body bg-dark text-light">
+                      <h4 class="card-title h4 text-white text-center pb-2">
+                        Project Five
+                      </h4>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <img />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card-wrapper">
+                  <div class="card mb-5 box-shadow front">
+                    <img
+                      class="card-img-top"
+                      src="images/project6.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body bg-dark text-light">
+                      <p class="card-title h4 text-center pb-2">Project Six</p>
+                      <p></p>
+                      <p class="card-text">Credits:</p>
+                      <p class="card-text">Recording Engineer</p>
+                      <p class="card-text">Mixing Engineer</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <img />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </main>
 
-      <!-- Work Album -->
-      <div class="album py-5">
+      <footer class="text-muted mb-0 pb-3">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card box-shadow front mx-2 mb-5">
-                  <!-- <div class="card-header d-flex justify-content-center">
-                  <a href="#" class="btn btn-danger">New Release!</a>
-                </div> -->
-                  <img
-                    class="card-img-top"
-                    src="images/project1.jpg"
-                    alt="Card image cap"
-                  />
-                  <a href="#" class="badge badge-danger py-2">New Release!</a>
-                  <div class="card-body bg-dark text-light">
-                    <p class="card-title h4 text-center pb-2">Project One</p>
-                    <p></p>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card mb-5 box-shadow front mx-2">
-                  <img
-                    class="card-img-top"
-                    src="images/project2.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body bg-dark text-light">
-                    <p class="card-title h4 text-center pb-2">Project Two</p>
-                    <p></p>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card mb-5 box-shadow front mx-2">
-                  <img
-                    class="card-img-top"
-                    src="images/project3.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body bg-dark text-light">
-                    <p class="card-title h4 text-center pb-2">Project Three</p>
-                    <p></p>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card mb-5 box-shadow front">
-                  <img
-                    class="card-img-top"
-                    src="images/project4.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body bg-dark text-light">
-                    <p class="card-title h4 text-center pb-2">Project Four</p>
-                    <p></p>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card mb-5 box-shadow front">
-                  <img
-                    class="card-img-top"
-                    src="images/project5.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body bg-dark text-light">
-                    <h4 class="card-title h4 text-white text-center pb-2">
-                      Project Five
-                    </h4>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="card-wrapper">
-                <div class="card mb-5 box-shadow front">
-                  <img
-                    class="card-img-top"
-                    src="images/project6.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body bg-dark text-light">
-                    <p class="card-title h4 text-center pb-2">Project Six</p>
-                    <p></p>
-                    <p class="card-text">Credits:</p>
-                    <p class="card-text">Recording Engineer</p>
-                    <p class="card-text">Mixing Engineer</p>
-                  </div>
-                </div>
-                <div class="back">
-                  <img />
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="float-right">
+            <a href="#" class="text-warning">Back to top</a>
+          </p>
+          <p>&copy Jason Woods Music 2020</p>
         </div>
-      </div>
-    </main>
+      </footer>
+    </div>
 
-    <footer class="text-muted mb-0 pb-3">
-      <div class="container">
-        <p class="float-right">
-          <a href="#" class="text-warning">Back to top</a>
-        </p>
-        <p>&copy Jason Woods Music 2020</p>
-        <!-- <p>
-        <a href="https://www.twitter.com"><i class='fab fa-twitter-square fa-2x text-warning ml-4'></i></a>
-        <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x text-warning"></i></a>
-        <a href="mailto:jwoodsywoods@gmail.com"><i class="far fa-envelope fa-2x text-warning"></i></a>
-      </p> -->
-      </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdn.jsdelivr.net/npm/holderjs@2.9.6/holder.min.js"></script>
     <script

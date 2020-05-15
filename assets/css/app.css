@@ -1,7 +1,34 @@
 /* Custom styles and overrides */
+body,
+html {
+  height: 100%;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../images/mixer2.jpg');
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #landing-page {
   height: 82vh;
+  background-color: transparent;
   transition: margin-top 1s ease;
 }
 
@@ -24,7 +51,7 @@
 }
 
 .jumbotron {
-  background-color: #2b3e50;
+  /* background-color: #2b3e50; */
   margin-bottom: 0;
 }
 
